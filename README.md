@@ -9,6 +9,7 @@
 -   PHP ^8.1
 -   BOOTSTRAP ^5
 -   Alguna librería de iconos (por ejemplo, font-awesome o la librería de iconos de Cartzilla)
+-   Agreagar la linea `"resources/js/apexcharts/*.js"` al vite.config.js
 
 ## Pasos Para La Integración
 
@@ -24,16 +25,16 @@
      </div>
 
     - Generar el componente de Livewire según la documentación.
-    - Crear un Archivo JS dentro de la carpeta `resources/js`. Por ejemplo, `resources/js/area-chart.js`
+    - Crear un Archivo JS dentro de la carpeta `resources/js/apexcharts`. Por ejemplo, `resources/js/apexcharts/area-chart.js`
     - Dentro de el archivo `resources/views/livewire/area-chart.blade.php` (O la ruta correspondiente para el archivo .blade.php del componente), introducir la siguiente estructura:
 
         `<div id="line-chart" data-series="{{ json_encode($series) }}" data-categories="{{ json_encode($categories) }}"></div>`
         <br />
         <br />
-        `@vite(['resources/js/area-chart.js'])`
+        `@vite(['resources/js/apexcharts/area-chart.js'])`
 
     - Dentro del archivo ubicado en la ruta `app/Livewire/AreaChart.php` (O la ruta correspondiente para el archivo .php del componente), introducir la estructura encontrada dentro de [Area Chart](./app/Livewire/AreaChart.php)
-    - Dentro del archivo `resources/js/area-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad ubicad dentro de el archivo [Area Chart](./resources/js/area-chart.js)
+    - Dentro del archivo `resources/js/apexcharts/area-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad ubicad dentro de el archivo [Area Chart](./resources/js/area-chart.js)
     - Llamar el componente `area-chart.blade.php`(O la ruta correspondiente para el archivo .blade.php del componente) en donde sea requerida su funcionalidad.
 
     ### NOTA: se debe agregar `type="graph-partial"` al llamar al componente Livewire si se desea utilizar un gráfico parcial del año actual que vaya desde Enero hasta Diciembre del año en curso. Este gráfico mostrara los datos solamente hasta el mes que está transcurriendo.
@@ -49,15 +50,15 @@
  </div>
 
 -   Generar el componente de Livewire por medio de la documentación.
--   Crear un Archivo JS dentro de la carpeta `resources/js`. Por ejemplo, `resources/js/bar-chart.js`
+-   Crear un Archivo JS dentro de la carpeta `resources/js/apexcharts`. Por ejemplo, `resources/js/apexcharts/bar-chart.js`
 -   Dentro de el archivo `resources/views/livewire/bar-chart.blade.php` (O la ruta correspondiente para el archivo .blade.php del componente), introducir la siguiente estructura:
     `<div id="bar-chart" data-series="{{ json_encode($series) }}" data-categories="{{ json_encode($categories) }}"></div>`
     <br />
     <br />
-    `@vite(['resources/js/bar-chart.js'])`
+    `@vite(['resources/js/apexcharts/bar-chart.js'])`
 
 -   Dentro del archivo ubicado en la ruta `app/Livewire/BarChart.php` (O la ruta correspondiente para el archivo .php del componente), introducir la estructura encontrada dentro de [Bar Chart](./app/Livewire/BarChart.php)
--   Dentro del archivo `resources/js/bar-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad dentro de el archivo [Bar Chart](./resources/js/bar-chart.js)
+-   Dentro del archivo `resources/js/apexcharts/bar-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad dentro de el archivo [Bar Chart](./resources/js/bar-chart.js)
 -   Llamar el componente `bar-chart.blade.php`(O la ruta correspondiente para el archivo .blade.php del componente) en donde sea requerida su funcionalidad.
 
 - ### Custom Bar Chart:
@@ -67,15 +68,15 @@
  </div>
 
 -   Generar el componente de Livewire por medio de la documentación.
--   Crear un Archivo JS dentro de la carpeta `resources/js`. Por ejemplo, `resources/js/bar-curstom-chart.js`
+-   Crear un Archivo JS dentro de la carpeta `resources/js/apexcharts`. Por ejemplo, `resources/js/apexcharts/bar-curstom-chart.js`
 -   Dentro de el archivo `resources/views/livewire/bar-custom-chart.blade.php` (O la ruta correspondiente para el archivo .blade.php del componente), introducir la siguiente estructura:
     `<div id="bar-custom-chart" data-series="{{ json_encode($series) }}" data-categories="{{ json_encode($categories) }}"></div>`
     <br />
     <br />
-    `@vite(['resources/js/bar-curstom-chart.js'])`
+    `@vite(['resources/js/apexcharts/bar-curstom-chart.js'])`
 
 -   Dentro del archivo ubicado en la ruta `app/Livewire/BarCustomChart.php` (O la ruta correspondiente para el archivo .php del componente), introducir la estructura encontrada dentro de [Bar Chart](./app/Livewire/BarCustomChart.php)
--   Dentro del archivo `resources/js/bar-curstom-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad dentro de el archivo [Bar Chart](./resources/js/bar-curstom-chart.js)
+-   Dentro del archivo `resources/js/apexcharts/bar-curstom-chart.js` (O la ruta correspondiente para el archivo .js del componente), introducir la siguiente funcionalidad dentro de el archivo [Bar Chart](./resources/js/bar-curstom-chart.js)
 -   Llamar el componente `bar-custom-chart.blade.php`(O la ruta correspondiente para el archivo .blade.php del componente) en donde sea requerida su funcionalidad.
 
 ## EDITAR LOS ESTILOS DE LOS CHARTS Y PASO DE PARAMETROS A SU USO
