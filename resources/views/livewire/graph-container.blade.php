@@ -53,6 +53,7 @@
                     <livewire:stat-card title="Title" value="00.0K" quantity="+00" color="#13b256" icon="users" />
                 </div>
             </div>
+
             <div class="col-12 col-lg-10">
                 <div class="card border shadow h-auto">
                     <div class="row">
@@ -66,7 +67,6 @@
                             <livewire:stat-card title="Actividad Economica" value="501" quantity="+7"
                                 color="#13b256" icon="shop" />
                         </div>
-
 
                         <div class="col-6 col-lg-2 d-flex align-items-center">
                             <livewire:stat-card title="Publicidad" value="250" quantity="-7" color="#13b256"
