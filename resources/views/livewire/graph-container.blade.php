@@ -6,33 +6,33 @@
                 <div class="col-12">
                     <div class="row">
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Contribuyentes" value="149" quantity="+49" color="#13b256"
                                 icon="users" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Actividad Economica" value="501" quantity="+7"
                                 color="#13b256" icon="shop" />
                         </div>
 
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Publicidad" value="250" quantity="-7" color="#13b256"
                                 icon="bullhorn" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Inmueble Urbano" value="100" quantity="+7" color="#13b256"
                                 icon="house" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Vehiculos" value="800" quantity="-7" color="#13b256"
                                 icon="car" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Aseo Urbano" value="26" quantity="+7" color="#13b256"
                                 icon="trash" />
                         </div>
@@ -58,32 +58,32 @@
                 <div class="card border shadow h-auto">
                     <div class="row">
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
-                            <livewire:stat-card title="Contribuyentes" value="149" quantity="+49" color="#13b256"
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
+                        <livewire:stat-card title="Contribuyentes" value="149" quantity="+49" color="#13b256"
                                 icon="users" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Actividad Economica" value="501" quantity="+7"
                                 color="#13b256" icon="shop" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Publicidad" value="250" quantity="-7" color="#13b256"
                                 icon="bullhorn" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Inmueble Urbano" value="100" quantity="+7" color="#13b256"
                                 icon="house" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Vehiculos" value="800" quantity="-7" color="#13b256"
                                 icon="car" />
                         </div>
 
-                        <div class="col-6 col-lg-2 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 col-md-4 col-xl-2 d-flex align-items-start justify-content-center">
                             <livewire:stat-card title="Aseo Urbano" value="26" quantity="+7" color="#13b256"
                                 icon="trash" />
                         </div>
