@@ -10,7 +10,7 @@
         <a href={{ $url }} id="url"
             class="card-text text-success fw-bold text-decoration-none link-success text-center d-block"
             style="font-size: clamp(0.7rem, 1.5vw, 0.9rem);">
-            <i class="{{ $icon }}"></i>
+            <i class="fa-solid fa-{{ $icon }}"></i>
             {{ $title }}
         </a>
     </div>
