@@ -113,7 +113,7 @@
     <!-- chart de area que va de Enero a Diciembre, y se llena de Enero hasta el mes N actual /> -->
     <div class="container my-5">
         <div class="card border shadow py-4">
-            <livewire:area-chart type="graph-partial" />
+            <livewire:partial-area-chart />
         </div>
     </div>
 

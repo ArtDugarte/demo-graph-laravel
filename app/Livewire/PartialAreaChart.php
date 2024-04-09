@@ -4,12 +4,12 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class AreaChart extends Component
+class PartialAreaChart extends Component
 {
     public function randomArrayOfNumbers()
     {
         $data = [];
-        $last = 13;
+        $last = date('m');
 
         for ($i = 0; $i < $last; $i++) {
             $data[] = rand(0, 1000);
@@ -22,18 +22,10 @@ class AreaChart extends Component
     {
         $year = date('Y');
 
-        // Obtener el mes actual del año en curso
-        $currentMonth = date('m') - 1;
-
-        for ($i = $currentMonth; $i >= 0; $i--) {
+        for ($i = 0; $i < 12; $i++) {
             $dates[] = $year.'-'.str_pad($i + 1, 2, '0', STR_PAD_LEFT).'-01T00:00:00.000Z';
         }
-
-        $year = $year - 1;
-
-        for ($i = 11; $i >= $currentMonth; $i--) {
-            $dates[] = $year.'-'.str_pad($i + 1, 2, '0', STR_PAD_LEFT).'-01T00:00:00.000Z';
-        }
+        $dates[] = $year.'-12-31T23:59:59.999-04:00';
 
         return $dates;
     }
@@ -70,6 +62,6 @@ class AreaChart extends Component
 
         $categories = $this->getMonths();
 
-        return view('livewire.area-chart', compact('series', 'categories'));
+        return view('livewire.partial-area-chart', compact('series', 'categories'));
     }
 }
